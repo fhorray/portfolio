@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { Sora } from "next/font/google";
+import Link from "next/link";
 
 const sora = Sora({ subsets: ["latin"] });
 
@@ -105,18 +106,20 @@ const HeroSection = () => {
       </div>
       {/* ARROW DOWN */}
       <div className="flex w-full flex-col items-center justify-center -mt-[150px] py-[45px] ">
-        <div>
-          {[1, 2].map((arrow) => (
-            <Image
-              key={arrow}
-              src="/img/icons/arrow-down-i.svg"
-              alt=""
-              width={isTabletOrMobile ? 20 : 25}
-              height={isTabletOrMobile ? 20 : 25}
-              className="mb-[3px] animate-[arrow-down_1s_infinite_100ms] opacity-45"
-            />
-          ))}
-        </div>
+        <Link href="#skills">
+          <div className="p-5">
+            {[1, 2].map((arrow) => (
+              <Image
+                key={arrow}
+                src="/img/icons/arrow-down-i.svg"
+                alt=""
+                width={isTabletOrMobile ? 20 : 25}
+                height={isTabletOrMobile ? 20 : 25}
+                className="mb-[3px] animate-[arrow-down_1s_infinite_100ms] opacity-45"
+              />
+            ))}
+          </div>
+        </Link>
       </div>
     </>
   );

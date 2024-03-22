@@ -22,7 +22,10 @@ const HardSkills = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
   return (
-    <div className="h-[400px] text-3xl w-full flex flex-col items-center justify-center">
+    <div
+      id="skills"
+      className="h-[400px] text-3xl w-full flex flex-col items-center justify-center"
+    >
       <h2
         className={
           sora.className +
