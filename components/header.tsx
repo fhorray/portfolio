@@ -1,3 +1,5 @@
+"use client";
+
 import { link } from "fs";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,8 +22,39 @@ const links = [
 ];
 
 const Header = () => {
+  const [scrollY, setScrollY] = React.useState(0);
+  const [headerBackground, setHeaderBackground] = React.useState("transparent");
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Limpar o evento de scroll ao desmontar o componente
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Determinar a cor de fundo do cabeçalho com base no valor de scrollY
+  React.useEffect(() => {
+    if (scrollY > 100) {
+      // Por exemplo, se o scroll ultrapassar 100 pixels, definir o fundo como azul
+      setHeaderBackground(
+        "md:bg-gradient-to-r from-transparent from-0% via-black via-50% to-transparent to-90%"
+      );
+    } else {
+      // Caso contrário, manter o fundo transparente
+      setHeaderBackground("transparent");
+    }
+  }, [scrollY]);
+
   return (
-    <header className="line w-full max-w-[1050px] md:mx-auto px-[30px] h-[95px] items-center justify-between flex ">
+    <header
+      className={` line w-full max-w-[1050px] md:mx-auto px-[30px] h-[85px] items-center justify-between flex ${headerBackground}`}
+    >
       <Link href={"/"} className="py-5">
         <Image
           src={"img/brand/fsantos-logo.svg"}

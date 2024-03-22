@@ -54,7 +54,7 @@ const HeroSection = () => {
         </div>
 
         {/* INFORMATION */}
-        <div className="z-50 absolute top-[270px] left-[30px] md:top-[270px] md:left-[20px] lg:top-[270px] lg:left-[120px] 2xl:left-[500px]">
+        <div className="absolute top-[270px] left-[30px] md:top-[270px] md:left-[20px] lg:top-[270px] lg:left-[120px] 2xl:left-[500px]">
           <div>
             <h2
               className={
