@@ -105,7 +105,7 @@ const HeroSection = () => {
         </div>
       </div>
       {/* ARROW DOWN */}
-      <div className="flex w-full flex-col items-center justify-center -mt-[150px] py-[45px] ">
+      <div className="flex w-full flex-col items-center justify-center -mt-[180px] py-[45px] ">
         <Link href="#skills">
           <div className="p-5">
             {[1, 2].map((arrow) => (
