@@ -104,7 +104,7 @@ const HeroSection = () => {
         </div>
       </div>
       {/* ARROW DOWN */}
-      <div className="flex w-full flex-col items-center justify-center -mt-[130px] py-[45px] ">
+      <div className="flex w-full flex-col items-center justify-center -mt-[150px] py-[45px] ">
         <div>
           {[1, 2].map((arrow) => (
             <Image
