@@ -63,16 +63,14 @@ const Header = () => {
       {/* Menu Mobile */}
       <div className="md:hidden flex">
         <Sheet>
-          <SheetTrigger>
+          <SheetTrigger className="py-4">
             {/* <MenuIcon className="text-white" /> */}
-            <Button variant={"ghost"}>
-              <Image
-                src={"img/icons/menu-mobile-i.svg"}
-                alt="Open menu"
-                width={25}
-                height={25}
-              />
-            </Button>
+            <Image
+              src={"img/icons/menu-mobile-i.svg"}
+              alt="Open menu"
+              width={25}
+              height={25}
+            />
           </SheetTrigger>
           <SheetContent className="sm:w-[540px]">
             <SheetHeader>
