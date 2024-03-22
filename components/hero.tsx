@@ -54,7 +54,7 @@ const HeroSection = () => {
         </div>
 
         {/* INFORMATION */}
-        <div className="text-image z-50 absolute top-[320px] left-[30px] md:top-[270px] md:left-[20px] lg:top-[270px] lg:left-[120px] 2xl:left-[500px]">
+        <div className="z-50 absolute top-[320px] left-[30px] md:top-[270px] md:left-[20px] lg:top-[270px] lg:left-[120px] 2xl:left-[500px]">
           <div>
             <h2
               className={
@@ -105,7 +105,7 @@ const HeroSection = () => {
         </div>
       </div>
       {/* ARROW DOWN */}
-      <div className="w-full flex flex-col items-center justify-center -mt-[250px] absolute">
+      <div className="w-full flex flex-col items-center justify-center absolute">
         <div>
           {[1, 2, 3].map((arrow) => (
             <Image
