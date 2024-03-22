@@ -4,7 +4,6 @@ import Image from "next/image";
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { Sora } from "next/font/google";
-import { Link } from "lucide-react";
 
 const sora = Sora({ subsets: ["latin"] });
 
@@ -43,7 +42,7 @@ const HeroSection = () => {
 
         {/* IMAGE */}
         <div className="w-full max-w-[1050px] relative">
-          <div className="absolute -right-[200px] md:-right-[250px] lg:-right-[350px] xl:-right-[450px] 2xl:-right-[1000px] -top-[160px]">
+          <div className="absolute -right-[200px] md:-right-[250px] lg:-right-[350px] xl:-right-[450px] 2xl:-right-[1000px] -top-[190px]">
             <Image
               src="/img/hero-img-3_transp.png"
               alt=""
@@ -54,7 +53,7 @@ const HeroSection = () => {
         </div>
 
         {/* INFORMATION */}
-        <div className="z-50 absolute top-[320px] left-[30px] md:top-[270px] md:left-[20px] lg:top-[270px] lg:left-[120px] 2xl:left-[500px]">
+        <div className="z-50 absolute top-[270px] left-[30px] md:top-[270px] md:left-[20px] lg:top-[270px] lg:left-[120px] 2xl:left-[500px]">
           <div>
             <h2
               className={
@@ -105,7 +104,7 @@ const HeroSection = () => {
         </div>
       </div>
       {/* ARROW DOWN */}
-      <div className="w-full flex flex-col items-center justify-center absolute">
+      <div className="hidden md:flex w-full flex-col items-center justify-center absolute md:-mt-[100px] py-[15px]">
         <div>
           {[1, 2].map((arrow) => (
             <Image

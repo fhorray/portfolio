@@ -1,11 +1,12 @@
+import HardSkills from "@/components/hard-skills";
 import HeroSection from "@/components/hero";
-import Image from "next/image";
 
 export default function Home() {
   return (
     <>
       {/* CONTENT */}
       <HeroSection />
+      <HardSkills />
     </>
   );
 }

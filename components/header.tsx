@@ -12,9 +12,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { MenuIcon } from "lucide-react";
-import { Button } from "./ui/button";
-import HeroSection from "./hero";
 
 const links = [
   { label: "Sobre", href: "/sobre" },
