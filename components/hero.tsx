@@ -72,7 +72,7 @@ const HeroSection = () => {
             >
               Francy Santos
             </h1>
-            <p className="text-mainWhite text-md max-w-[550px] pl-[33px] md:pl-[53px] mb-[27px]  md:text-lg px-[75px] md:px-0">
+            <p className="text-mainWhite text-sm max-w-[550px] pl-[33px] md:pl-[53px] mb-[27px]  md:text-lg px-[75px] md:px-0">
               <strong>UI Designer</strong> e
               <strong> Desenvolvedor Front-End </strong>
               com habilidades em <strong>React.js, Next.js </strong>
@@ -107,7 +107,7 @@ const HeroSection = () => {
       {/* ARROW DOWN */}
       <div className="w-full flex flex-col items-center justify-center absolute">
         <div>
-          {[1, 2, 3].map((arrow) => (
+          {[1, 2].map((arrow) => (
             <Image
               key={arrow}
               src="/img/icons/arrow-down-i.svg"
