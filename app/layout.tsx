@@ -17,8 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={(inter.className, "bg-mainBackground px-[30px]")}>
-        <Header />
+      <body className={(inter.className, "bg-mainBackground ")}>
+        <div className="w-full bg-gradient-to-b from-mainBackground h-[95px] fixed top-0 z-50 left-0 right-0">
+          <Header />
+        </div>
         {children}
       </body>
     </html>

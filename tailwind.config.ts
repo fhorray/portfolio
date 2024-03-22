@@ -18,6 +18,16 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        "hero-img": "url('/img/hero-img-3.png')",
+      },
+      backgroundSize: {
+        auto: "auto",
+        cover: "cover",
+        contain: "contain",
+        "50%": "50%",
+        "16": "4rem",
+      },
       colors: {
         purple: "#9245F5",
         mainBlack: "#2C2C2C",

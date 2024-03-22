@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/sheet";
 import { MenuIcon } from "lucide-react";
 import { Button } from "./ui/button";
+import HeroSection from "./hero";
 
 const links = [
   { label: "Sobre", href: "/sobre" },
@@ -23,7 +24,7 @@ const links = [
 
 const Header = () => {
   return (
-    <header className="line w-full h-[95px] items-center justify-between flex mx-auto max-w-[1045px]">
+    <header className="line w-full max-w-[1050px] md:mx-auto px-[30px] h-[95px] items-center justify-between flex ">
       <Link href={"/"} className="py-5">
         <Image
           src={"img/brand/fsantos-logo.svg"}
