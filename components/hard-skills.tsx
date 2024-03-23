@@ -24,7 +24,7 @@ const HardSkills = () => {
   return (
     <div
       id="skills"
-      className="h-[400px] text-3xl w-full flex flex-col items-center justify-center"
+      className="sectionDetail h-[400px] text-3xl w-full flex flex-col items-center justify-center"
     >
       <h2
         className={

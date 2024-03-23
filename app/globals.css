@@ -190,7 +190,6 @@ body {
   -webkit-text-stroke-color: white;
   -webkit-text-stroke-width: 0.05rem;
 }
-
 .dt1 {
   top: 6.8rem;
   opacity: 0.15;
@@ -203,4 +202,14 @@ body {
 .dt3 {
   bottom: -14.6rem;
   opacity: 0.05;
+}
+
+/* LINES SECTION */
+.sectionDetail::before {
+  @apply content-[""] w-full h-[0.05rem] bg-purple block rotate-[-4.29deg] animate-[baladTwo_3s_infinite_ease-in-out] mb-48;
+  animation-direction: alternate, reverse, normal;
+}
+.sectionDetail::after {
+  @apply content-[""] w-full h-[0.05rem] bg-purple block rotate-[-4.29deg] animate-[baladTwo_0.4s_infinite_ease-in-out] mb-48;
+  animation-direction: alternate, reverse, normal;
 }
