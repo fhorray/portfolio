@@ -27,9 +27,22 @@ const HeroSection = () => {
 
   return (
     <>
-      <div className="line flex max-w-[1050px] mx-auto left-0 right-0 h-screen w-full ">
-        {/* DETAILS */}
-        <div>
+      <div className="flex max-w-[1050px] mx-auto left-0 right-0 h-screen w-full ">
+        {/* DETAILS MOBILE */}
+        <div className="md:hidden overflow-x-hidden">
+          <span className="dt opacity-15 md:opacity-20 top-[4.8rem]">
+            {"<FR"}
+          </span>
+          <span className="dt  opacity-15 md:opacity-20 z-20 top-[22rem] left-[1rem]">
+            {"<HT"}
+          </span>
+          <span className="dt opacity-15 md:opacity-10 bottom-[4.6rem] right-[13rem]">
+            CSS {"{...}"}
+          </span>
+        </div>
+
+        {/* DETAILS DESKTOP */}
+        <div className="hidden md:block overflow-x-hidden">
           <span className="dt opacity-15 md:opacity-20 top-[4.8rem]">
             {"<FRONT-END />"}
           </span>

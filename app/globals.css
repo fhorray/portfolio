@@ -152,12 +152,12 @@ body {
 }
 
 .line::after {
-  @apply content-[""] w-[83.5rem] h-[0.05rem] opacity-30 bg-[#9245f5] block absolute z-[3000] animate-[baladTwo_3s_infinite_ease-in-out] left-[27rem] top-[110px];
+  @apply content-[""] w-full h-[0.05rem] opacity-30 bg-[#9245f5] block absolute z-[3000] animate-[baladTwo_3s_infinite_ease-in-out] left-[27rem] top-[110px];
   transform: matrix(-3.93, -0.4, 0.37, -0.92, 0, 0);
   animation-direction: alternate, reverse, normal;
 }
 .line::before {
-  @apply content-[""] w-[83.5rem] h-[0.05rem] opacity-30 bg-[#9245f5] block absolute right-[-152px] z-[3000] animate-[baladTwo_0.2s_infinite_ease-in-out] top-[110px];
+  @apply content-[""] w-full h-[0.05rem] opacity-30 bg-[#9245f5] block absolute right-[-152px] z-[3000] animate-[baladTwo_0.2s_infinite_ease-in-out] top-[110px];
   transform: matrix(-3.93, -3.4, 0.37, -0.92, 0, 0);
   animation-direction: alternate, reverse, normal;
 }
