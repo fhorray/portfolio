@@ -33,9 +33,6 @@ const HeroSection = () => {
           <span className="dt opacity-15 md:opacity-20 top-[4.8rem]">
             {"<FR"}
           </span>
-          <span className="dt  opacity-15 md:opacity-20 z-20 top-[22rem] left-[1rem]">
-            {"<HT"}
-          </span>
           <span className="dt opacity-15 md:opacity-10 bottom-[4.6rem] right-[13rem]">
             CSS {"{...}"}
           </span>
