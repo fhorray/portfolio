@@ -29,7 +29,7 @@ const HardSkills = () => {
       <h2
         className={
           sora.className +
-          " text-mainWhite text-3xl before:content-['<'] after:content-['/>'] after:ml-2 before:mr-2 after:text-purple before:text-purple after:font-bold before:font-bold mb-10"
+          " text-mainWhite text-2xl md:text-4xl before:content-['<'] after:content-['/>'] after:ml-2 before:mr-2 after:text-purple before:text-purple after:font-bold before:font-bold mb-10"
         }
       >
         Hard Skills

@@ -27,7 +27,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <div className="flex max-w-[1050px] left-0 right-0 relative h-screen w-full ">
+      <div className="line flex max-w-[1050px] mx-auto left-0 right-0 h-screen w-full ">
         {/* DETAILS */}
         <div>
           <span className="dt opacity-15 md:opacity-20 top-[4.8rem]">
@@ -43,7 +43,7 @@ const HeroSection = () => {
 
         {/* IMAGE */}
         <div className="w-full max-w-[1050px] relative">
-          <div className="absolute -right-[200px] md:-right-[250px] lg:-right-[350px] xl:-right-[450px] 2xl:-right-[1000px] -top-[190px]">
+          <div className="absolute -right-[200px] md:-right-[250px] lg:-right-[350px] xl:-right-[250px] 2xl:-right-[200px] -top-[190px]">
             <Image
               src="/img/hero-img-3_transp.png"
               alt=""
@@ -54,12 +54,12 @@ const HeroSection = () => {
         </div>
 
         {/* INFORMATION */}
-        <div className="absolute top-[270px] left-[30px] md:top-[270px] md:left-[20px] lg:top-[270px] lg:left-[120px] 2xl:left-[500px]">
+        <div className="absolute top-[270px] left-[30px] md:top-[270px] md:left-[20px] lg:top-[270px] lg:left-[120px] 2xl:left-[30px]">
           <div>
             <h2
               className={
                 sora.className +
-                " font-normal text-[25px] md:text-5xl tracking-wide text-mainWhite mb-[5px] md:mb-[25px]"
+                " font-normal text-2xl md:text-5xl tracking-wide text-mainWhite mb-[5px] md:mb-[25px]"
               }
             >
               Olá, eu sou <span className="text-purple">{"{"}</span>

@@ -152,34 +152,13 @@ body {
 }
 
 .line::after {
-  content: "";
-  width: 83.5rem;
-  height: 0.05rem;
-  opacity: 0.3;
-  background-color: #9245f5;
-  display: block;
+  @apply content-[""] w-[83.5rem] h-[0.05rem] opacity-30 bg-[#9245f5] block absolute z-[3000] animate-[baladTwo_3s_infinite_ease-in-out] left-[27rem] top-[110px];
   transform: matrix(-3.93, -0.4, 0.37, -0.92, 0, 0);
-  position: absolute;
-  top: 110px;
-  left: 27rem;
-  z-index: 3000;
-  animation: baladTwo 3s infinite ease-in-out;
   animation-direction: alternate, reverse, normal;
 }
-
 .line::before {
-  content: "";
-  width: 83.5rem;
-  height: 0.05rem;
-  opacity: 0.3;
-  background-color: #9245f5;
-  display: block;
+  @apply content-[""] w-[83.5rem] h-[0.05rem] opacity-30 bg-[#9245f5] block absolute right-[-152px] z-[3000] animate-[baladTwo_0.2s_infinite_ease-in-out] top-[110px];
   transform: matrix(-3.93, -3.4, 0.37, -0.92, 0, 0);
-  position: absolute;
-  top: 110px;
-  right: -152px;
-  z-index: 3000;
-  animation: baladTwo 0.2s infinite ease-in-out;
   animation-direction: alternate, reverse, normal;
 }
 
@@ -205,11 +184,11 @@ body {
 }
 
 /* LINES SECTION */
-.sectionDetail::before {
-  @apply content-[""] w-full h-[0.05rem] bg-purple block rotate-[-4.29deg] animate-[baladTwo_3s_infinite_ease-in-out] mb-48;
+.section-detail::before {
+  @apply content-[""] w-full h-[0.05rem] bg-purple block rotate-[-4.29deg] animate-[baladTwo_3s_infinite_ease-in-out];
   animation-direction: alternate, reverse, normal;
 }
-.sectionDetail::after {
-  @apply content-[""] w-full h-[0.05rem] bg-purple block rotate-[-4.29deg] animate-[baladTwo_0.4s_infinite_ease-in-out] mb-48;
+.section-detail::after {
+  @apply content-[""] w-full h-[0.05rem] bg-purple block rotate-[-4.29deg] animate-[baladTwo_0.4s_infinite_ease-in-out] mb-14;
   animation-direction: alternate, reverse, normal;
 }

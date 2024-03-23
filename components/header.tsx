@@ -16,9 +16,9 @@ import {
 } from "@/components/ui/sheet";
 
 const links = [
-  { label: "Sobre", href: "/sobre" },
-  { label: "Projetos", href: "/sobre" },
-  { label: "Baixar CV", href: "/cv-download" },
+  { label: "Sobre", href: "#sobre" },
+  { label: "Projetos", href: "#projetos" },
+  { label: "Baixar CV", href: "#cv-download" },
 ];
 
 const Header = () => {
@@ -43,7 +43,7 @@ const Header = () => {
     if (scrollY > 100) {
       // Por exemplo, se o scroll ultrapassar 100 pixels, definir o fundo como azul
       setHeaderBackground(
-        "md:bg-gradient-to-r from-transparent from-0% via-black via-50% to-transparent to-90%"
+        "bg-mainBackground/70 md:bg-gradient-to-r from-transparent from-0% via-black via-50% to-transparent to-90%"
       );
     } else {
       // Caso contrário, manter o fundo transparente
@@ -53,7 +53,7 @@ const Header = () => {
 
   return (
     <header
-      className={` line w-full max-w-[1050px] md:mx-auto px-[30px] h-[85px] items-center justify-between flex ${headerBackground}`}
+      className={`w-full max-w-[1050px] md:mx-auto px-[30px] items-center justify-between flex ${headerBackground} from-mainBackground h-[75px] md:h-[95px] fixed top-0 z-50 left-0 right-0`}
     >
       <Link href={"/"} className="py-5">
         <Image
