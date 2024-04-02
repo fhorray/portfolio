@@ -17,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={(inter.className, "bg-mainBackground")}>{children}</body>
+      <body className={(inter.className, "bg-mainBackground overflow-hidden")}>
+        {children}
+      </body>
     </html>
   );
 }
