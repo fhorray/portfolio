@@ -192,3 +192,9 @@ body {
   @apply content-[""] w-full h-[0.05rem] bg-purple block rotate-[-4.29deg] animate-[baladTwo_0.4s_infinite_ease-in-out] mb-14;
   animation-direction: alternate, reverse, normal;
 }
+
+/* LINES SECTION */
+.section-detail-bottom::after {
+  @apply content-[""] w-full h-[0.05rem] bg-purple block rotate-[-4.29deg] animate-[baladTwo_3s_infinite_ease-in-out];
+  animation-direction: alternate, reverse, normal;
+}

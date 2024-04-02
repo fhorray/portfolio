@@ -5,22 +5,9 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { Sora } from "next/font/google";
 import Link from "next/link";
+import { socials } from "@/constants";
 
 const sora = Sora({ subsets: ["latin"] });
-
-// SOCIAL MEDIA
-const socials = [
-  { href: "https://github.com/fhorray", icon: "/img/icons/github-i.svg" },
-  {
-    href: "https://www.linkedin.com/in/francysantos/",
-    icon: "/img/icons/linkedin-i.svg",
-  },
-  {
-    href: "https://www.instagram.com/fhorray/",
-    icon: "/img/icons/instagram-i.svg",
-  },
-  { href: "https://www.behance.net/fhorray", icon: "/img/icons/behance-i.svg" },
-];
 
 const HeroSection = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
@@ -49,7 +36,9 @@ const HeroSection = () => {
           CSS {"{...}"}
         </span>
       </div>
-      <div className="flex max-w-[1050px] mx-auto left-0 right-0 h-screen w-full ">
+
+      {/* CONTENT */}
+      <div className="line flex max-w-[1050px] mx-auto left-0 right-0 h-screen w-full ">
         <div className="flex items-center max-w-[1060px]">
           {/* INFORMATION */}
           <div className="pl-[30px] z-20">
@@ -114,6 +103,24 @@ const HeroSection = () => {
             />
           </div>
         </div>
+      </div>
+
+      {/* ARROW DOWN */}
+      <div className="flex w-full flex-col items-center justify-center -mt-[180px] py-[45px] ">
+        <Link href="#skills">
+          <div className="p-5">
+            {[1, 2].map((arrow) => (
+              <Image
+                key={arrow}
+                src="/img/icons/arrow-down-i.svg"
+                alt=""
+                width={isTabletOrMobile ? 20 : 25}
+                height={isTabletOrMobile ? 20 : 25}
+                className="mb-[3px] animate-[arrow-down_1s_infinite_100ms] opacity-45"
+              />
+            ))}
+          </div>
+        </Link>
       </div>
     </>
   );

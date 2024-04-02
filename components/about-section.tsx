@@ -1,13 +1,14 @@
+import Image from "next/image";
 import React from "react";
 
 const AboutSection = () => {
   return (
     <section
       id="about"
-      className="h-auto max-w-[1050px] mx-auto text-white text-3xl before:w-full py-20 px-[30px]"
+      className="relative h-auto max-w-[1050px] mx-auto text-white text-3xl before:w-full py-20 px-[30px]"
     >
       <div className="text">
-        <h2 className="font-normal text-2xl md:text-4xl tracking-wide text-mainWhite mb-9">
+        <h2 className="font-normal text-3xl md:text-4xl tracking-wide text-mainWhite mb-9">
           sobre-mim{" "}
           <span className="font-bold text-purple text-3xl md:text-4xl tracking-wide">
             {"{"}
@@ -37,7 +38,9 @@ const AboutSection = () => {
           {"}"}
         </span>
       </div>
-      {/* <span className="detail dt-sobre">Sobre</span> */}
+      <span className="dt absolute top-0 md:top-[130px] right-0 opacity-15">
+        Sobre
+      </span>
     </section>
   );
 };
