@@ -53,7 +53,7 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full max-w-[1050px] md:mx-auto px-[30px] items-center justify-between flex ${headerBackground} from-mainBackground h-[75px] md:h-[95px] fixed top-0 z-50 left-0 right-0`}
+      className={`line w-full max-w-[1050px] md:mx-auto px-[30px] items-center justify-between flex ${headerBackground} from-mainBackground h-[75px] md:h-[95px] fixed top-0 z-50 left-0 right-0`}
     >
       <Link href={"/"} className="py-5">
         <Image

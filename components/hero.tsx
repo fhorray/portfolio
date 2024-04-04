@@ -13,7 +13,7 @@ const HeroSection = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
   return (
-    <>
+    <section className="relative">
       {/* DETAILS MOBILE */}
       <div className="md:hidden overflow-x-hidden">
         <span className="dt opacity-15 md:opacity-20 top-[4.8rem]">
@@ -38,8 +38,8 @@ const HeroSection = () => {
       </div>
 
       {/* CONTENT */}
-      <div className="line flex max-w-[1050px] mx-auto left-0 right-0 h-screen w-full ">
-        <div className="flex items-center max-w-[1060px]">
+      <div className="flex left-0 right-0 h-screen w-full ">
+        <div className="flex items-center max-w-[1060px] mx-auto">
           {/* INFORMATION */}
           <div className="pl-[30px] z-20">
             <div>
@@ -94,7 +94,7 @@ const HeroSection = () => {
           </div>
 
           {/* IMAGE */}
-          <div className="absolute -right-[200px] md:-right-[250px] lg:-right-[270px] xl:-right-[250px] 2xl:right-[190px] -top-[150px] ">
+          <div className="absolute max-w-[500px] -right-[130px]  md:-right-[250px] lg:-right-[270px] xl:-right-[250px] 2xl:right-[190px] -top-[150px] overflow-x-hidden">
             <Image
               src="/img/hero-img-3_transp.png"
               alt="Francy Santos"
@@ -122,7 +122,7 @@ const HeroSection = () => {
           </div>
         </Link>
       </div>
-    </>
+    </section>
   );
 };
 
