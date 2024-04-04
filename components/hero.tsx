@@ -13,36 +13,36 @@ const HeroSection = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
   return (
-    <section className="relative">
-      {/* DETAILS MOBILE */}
-      <div className="md:hidden overflow-x-hidden">
-        <span className="dt opacity-15 md:opacity-20 top-[4.8rem]">
-          {"<FR"}
-        </span>
-        <span className="dt opacity-15 md:opacity-10 bottom-[4.6rem] right-[13rem]">
-          CSS {"{...}"}
-        </span>
-      </div>
+    <section className="relative w-full">
+      <div className="w-full max-w-[1060px] mx-auto">
+        {/* DETAILS MOBILE */}
+        <div className="md:hidden overflow-x-hidden">
+          <span className="dt opacity-15 md:opacity-20 top-[4.8rem]">
+            {"<FR"}
+          </span>
+          <span className="dt opacity-15 md:opacity-10 bottom-[4.6rem] right-[13rem]">
+            CSS {"{...}"}
+          </span>
+        </div>
 
-      {/* DETAILS DESKTOP */}
-      <div className="hidden md:block overflow-x-hidden">
-        <span className="dt opacity-15 md:opacity-20 top-[4.8rem]">
-          {"<FRONT-END />"}
-        </span>
-        <span className="dt opacity-15 md:opacity-20 z-20 top-[22rem] left-[14rem]">
-          {"<HTML />"}
-        </span>
-        <span className="dt opacity-15 md:opacity-10 bottom-[4.6rem] right-[13rem]">
-          CSS {"{...}"}
-        </span>
-      </div>
+        {/* DETAILS DESKTOP */}
+        <div className="hidden md:block overflow-x-hidden">
+          <span className="dt opacity-15 md:opacity-20 top-[4.8rem]">
+            {"<FRONT-END />"}
+          </span>
+          <span className="dt opacity-15 md:opacity-20 z-20 top-[22rem] left-[14rem]">
+            {"<HTML />"}
+          </span>
+          <span className="dt opacity-15 md:opacity-10 bottom-[4.6rem] right-[13rem]">
+            CSS {"{...}"}
+          </span>
+        </div>
 
-      {/* CONTENT */}
-      <div className="flex left-0 right-0 h-screen w-full ">
-        <div className="flex items-center max-w-[1060px] mx-auto">
-          {/* INFORMATION */}
-          <div className="pl-[30px] z-20">
-            <div>
+        {/* CONTENT */}
+        <div className="flex self-start  h-screen w-full ">
+          <div className="flex items-center">
+            {/* INFORMATION */}
+            <div className="pl-[30px] z-20 =pt-16 md:pt-0">
               <h2
                 className={
                   sora.className +
@@ -91,36 +91,36 @@ const HeroSection = () => {
                 <span className="interm text-white">|</span>
               </h2>
             </div>
-          </div>
 
-          {/* IMAGE */}
-          <div className="absolute max-w-[500px] -right-[130px]  md:-right-[250px] lg:-right-[270px] xl:-right-[250px] 2xl:right-[190px] -top-[150px] overflow-x-hidden">
-            <Image
-              src="/img/hero-img-3_transp.png"
-              alt="Francy Santos"
-              width={900}
-              height={900}
-            />
+            {/* IMAGE */}
+            <div className="absolute  -right-[130px] max-w-[500px] md:max-w-[700px]  md:-right-[250px] lg:-right-[170px]  xl:-right-[50px] 2xl:right-[190px] -top-[150px] overflow-x-hidden">
+              <Image
+                src="/img/hero-img-3_transp.png"
+                alt="Francy Santos"
+                width={900}
+                height={900}
+              />
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* ARROW DOWN */}
-      <div className="flex w-full flex-col items-center justify-center -mt-[180px] py-[45px] ">
-        <Link href="#skills">
-          <div className="p-5">
-            {[1, 2].map((arrow) => (
-              <Image
-                key={arrow}
-                src="/img/icons/arrow-down-i.svg"
-                alt=""
-                width={isTabletOrMobile ? 20 : 25}
-                height={isTabletOrMobile ? 20 : 25}
-                className="mb-[3px] animate-[arrow-down_1s_infinite_100ms] opacity-45"
-              />
-            ))}
-          </div>
-        </Link>
+        {/* ARROW DOWN */}
+        <div className="flex w-full flex-col items-center justify-center -mt-[180px] py-[45px] ">
+          <Link href="#skills">
+            <div className="p-5">
+              {[1, 2].map((arrow) => (
+                <Image
+                  key={arrow}
+                  src="/img/icons/arrow-down-i.svg"
+                  alt=""
+                  width={isTabletOrMobile ? 20 : 25}
+                  height={isTabletOrMobile ? 20 : 25}
+                  className="mb-[3px] animate-[arrow-down_1s_infinite_100ms] opacity-45"
+                />
+              ))}
+            </div>
+          </Link>
+        </div>
       </div>
     </section>
   );
