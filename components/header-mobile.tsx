@@ -2,13 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const links = [
+export const links = [
   { label: "Sobre", href: "/sobre" },
   { label: "Projetos", href: "/sobre" },
   { label: "Baixar CV", href: "/cv-download" },
 ];
 
-const HeaderMobile = () => {
+export const HeaderMobile = () => {
   return (
     <nav className=" md:flex gap-6">
       <ul className="flex flex-col w-full">
@@ -37,5 +37,3 @@ const HeaderMobile = () => {
     </nav>
   );
 };
-
-export default HeaderMobile;

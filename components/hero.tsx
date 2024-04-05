@@ -9,24 +9,14 @@ import { socials } from "@/constants";
 
 const sora = Sora({ subsets: ["latin"] });
 
-const HeroSection = () => {
+export const HeroSection = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
   return (
     <section className="relative w-full">
       <div className="w-full max-w-[1060px] mx-auto">
-        {/* DETAILS MOBILE */}
-        <div className="md:hidden overflow-x-hidden">
-          <span className="dt opacity-15 md:opacity-20 top-[4.8rem]">
-            {"<FR"}
-          </span>
-          <span className="dt opacity-15 md:opacity-10 bottom-[4.6rem] right-[13rem]">
-            CSS {"{...}"}
-          </span>
-        </div>
-
-        {/* DETAILS DESKTOP */}
-        <div className="hidden md:block overflow-x-hidden">
+        {/* DETAILS */}
+        <div className="overflow-x-hidden">
           <span className="dt opacity-15 md:opacity-20 top-[4.8rem]">
             {"<FRONT-END />"}
           </span>
@@ -93,7 +83,7 @@ const HeroSection = () => {
             </div>
 
             {/* IMAGE */}
-            <div className="absolute  -right-[130px] max-w-[500px] md:max-w-[700px]  md:-right-[250px] lg:-right-[170px]  xl:-right-[50px] 2xl:right-[190px] -top-[150px] overflow-x-hidden">
+            <div className="absolute  -right-[160px] max-w-[800px] md:max-w-[800px] md:-right-[250px] lg:-right-[170px]  xl:-right-[50px] 2xl:right-[190px] -top-[150px] overflow-x-hidden">
               <Image
                 src="/img/hero-img-3_transp.png"
                 alt="Francy Santos"
@@ -125,5 +115,3 @@ const HeroSection = () => {
     </section>
   );
 };
-
-export default HeroSection;

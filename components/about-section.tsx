@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const AboutSection = () => {
+export const AboutSection = () => {
   return (
     <section
       id="about"
@@ -38,11 +38,9 @@ const AboutSection = () => {
           {"}"}
         </span>
       </div>
-      <span className="dt absolute top-0 md:top-[130px] right-0 opacity-15">
+      <span className="dt absolute top-0 md:top-[130px] right-0 opacity-25">
         Sobre
       </span>
     </section>
   );
 };
-
-export default AboutSection;

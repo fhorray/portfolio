@@ -8,12 +8,7 @@ export const Projects = () => {
       id="projects"
       className="relative w-full h-auto max-w-[1050px] mx-auto text-white text-3xl before:w-full py-20 px-[30px]"
     >
-      {/* TODO: RESOLVE CARD HOVER PROBLEM  */}
-      <span className="dt absolute top-0 md:top-[130px] right-0 opacity-15">
-        Projects
-      </span>
-
-      <div>
+      <div className="">
         <h2 className="font-normal text-3xl md:text-4xl tracking-wide text-mainWhite mb-9">
           <span className="font-normal text-purple text-3xl md:text-4xl tracking-wide">
             const{" "}
@@ -37,6 +32,10 @@ export const Projects = () => {
         </div>
         <span className="font-bold text-purple text-3xl md:text-4xl tracking-wide">
           {"};"}
+        </span>
+
+        <span className="dt absolute top-0 md:-top-[30px] right-0 opacity-25">
+          Projects
         </span>
       </div>
     </section>

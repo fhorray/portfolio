@@ -18,7 +18,7 @@ const hardSkills = [
   { icon: "/img/icons/illustrator-i.svg", label: "Illustrator" },
 ];
 
-const HardSkills = () => {
+export const HardSkills = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
   return (
@@ -50,5 +50,3 @@ const HardSkills = () => {
     </div>
   );
 };
-
-export default HardSkills;

@@ -4,7 +4,6 @@ import { link } from "fs";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import HeaderMobile from "./header-mobile";
 
 import {
   Sheet,
@@ -14,14 +13,15 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { HeaderMobile } from "./header-mobile";
 
 const links = [
   { label: "Sobre", href: "#sobre" },
-  { label: "Projetos", href: "#projetos" },
+  { label: "Projetos", href: "/projects" },
   { label: "Baixar CV", href: "#cv-download" },
 ];
 
-const Header = () => {
+export const Header = () => {
   const [scrollY, setScrollY] = React.useState(0);
   const [headerBackground, setHeaderBackground] = React.useState("transparent");
 
@@ -125,5 +125,3 @@ const Header = () => {
     </header>
   );
 };
-
-export default Header;
