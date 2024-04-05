@@ -32,7 +32,7 @@ export const HeroSection = () => {
         <div className="flex self-start  h-screen w-full ">
           <div className="flex items-center">
             {/* INFORMATION */}
-            <div className="pl-[30px] z-20 =pt-16 md:pt-0">
+            <div className="pl-[30px] z-20 mt-24 md:pt-0">
               <h2
                 className={
                   sora.className +
