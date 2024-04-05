@@ -164,10 +164,10 @@ body {
 
 /* DETAILS */
 .dt {
-  @apply absolute bg-transparent z-0 font-semibold text-[11rem] md:text-[13rem] leading-[120%] tracking-[-0.02em] select-none whitespace-nowrap;
+  @apply absolute bg-transparent z-0 font-semibold text-[8rem] md:text-[13rem] leading-[120%] tracking-[-0.02em] select-none whitespace-nowrap;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: white;
-  -webkit-text-stroke-width: 0.05rem;
+  -webkit-text-stroke-width: 0.04rem;
 }
 .dt1 {
   top: 6.8rem;
