@@ -1,11 +1,18 @@
 import Image from "next/image";
-import React from "react";
+
+import { Sora, Inter } from "next/font/google";
+
+const sora = Sora({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const AboutSection = () => {
   return (
     <section
       id="about"
-      className="relative h-auto max-w-[1050px] mx-auto text-white text-3xl before:w-full py-20 px-[30px]"
+      className={
+        sora.className +
+        " relative h-auto max-w-[1050px] mx-auto text-white text-3xl before:w-full py-20 px-[30px]"
+      }
     >
       <div className="text">
         <h2 className="font-normal text-3xl md:text-4xl tracking-wide text-mainWhite mb-9">
@@ -14,7 +21,12 @@ export const AboutSection = () => {
             {"{"}
           </span>
         </h2>
-        <div className="text-[16px] md:text-[22px] leading-6 md:leading-7 max-w-[580px] flex flex-col gap-5 pl-10">
+        <div
+          className={
+            inter.className +
+            " text-[16px] md:text-[22px] leading-6 md:leading-7 max-w-[580px] flex flex-col gap-5 pl-10"
+          }
+        >
           <p>
             Eu me chamo <span>Francyelton</span> <i>(Francy rsrs)</i>, um
             desenvolvedor web freelancer com experiência em{" "}

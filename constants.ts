@@ -9,7 +9,7 @@ export const socials = [
     href: "https://www.instagram.com/fhorray/",
     icon: "/img/icons/instagram-i.svg",
   },
-  { href: "https://www.behance.net/fhorray", icon: "/img/icons/behance-i.svg" },
+  // { href: "https://www.behance.net/fhorray", icon: "/img/icons/behance-i.svg" },
 ];
 
 export const projects = [

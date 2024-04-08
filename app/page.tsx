@@ -1,7 +1,7 @@
 import { AboutSection } from "@/components/about-section";
 import { Certificates } from "@/components/certificates";
+import { Footer } from "@/components/footer";
 import { HardSkills } from "@/components/hard-skills";
-import { Header } from "@/components/header";
 import { HeroSection } from "@/components/hero";
 import { Projects } from "@/components/projects";
 
@@ -20,6 +20,8 @@ export default function Home() {
       <div className="section-detail">
         <Certificates />
       </div>
+
+      <Footer />
     </>
   );
 }

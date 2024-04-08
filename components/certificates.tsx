@@ -5,6 +5,10 @@ import Image from "next/image";
 
 import { useMediaQuery } from "react-responsive";
 
+import { Sora } from "next/font/google";
+
+const sora = Sora({ subsets: ["latin"] });
+
 export const Certificates = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 624px)" });
 
@@ -14,7 +18,9 @@ export const Certificates = () => {
   };
 
   return (
-    <section className="w-full h-auto px-[30px] py-24 relative">
+    <section
+      className={sora.className + " w-full h-auto px-[30px] py-24 relative"}
+    >
       <div className="w-full mx-auto max-w-[1060px]">
         <span className="detail dt-certificates">Certificados</span>
 

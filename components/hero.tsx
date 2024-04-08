@@ -60,14 +60,14 @@ export const HeroSection = () => {
               {/* Social Medias */}
               <ul className="flex gap-5 pl-[33px] md:pl-[53px]">
                 {socials.map((social) => (
-                  <li key={social.href}>
-                    <a href={social.href}>
+                  <li key={social.href} className="py-2">
+                    <a href={social.href} target="_blank">
                       <Image
                         src={social.icon}
                         alt="Behance Icon"
                         width={isTabletOrMobile ? 27 : 37}
                         height={isTabletOrMobile ? 27 : 37}
-                        className="hover:opacity-85 transition ease-in-out duration-100"
+                        className="hover:opacity-85 transition ease-in-out duration-100 hover:scale-110"
                       />
                     </a>
                   </li>
@@ -95,7 +95,7 @@ export const HeroSection = () => {
         </div>
 
         {/* ARROW DOWN */}
-        <div className="flex w-full flex-col items-center justify-center -mt-[180px] py-[45px] ">
+        {/* <div className="flex w-full flex-col items-center justify-center -mt-[180px] py-[45px] ">
           <Link href="#skills">
             <div className="p-5">
               {[1, 2].map((arrow) => (
@@ -110,7 +110,7 @@ export const HeroSection = () => {
               ))}
             </div>
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );
