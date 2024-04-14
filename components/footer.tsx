@@ -26,7 +26,7 @@ export const Footer = () => {
 
         <a
           className="text-3xl md:text-4xl text-purple font-bold"
-          href="mailto:francy.horray@gmail.com"
+          href="mailto:oi@francy.dev"
         >
           oi@francy.dev
         </a>
