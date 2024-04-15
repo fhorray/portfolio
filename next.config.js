@@ -9,8 +9,7 @@ module.exports = {
             value: "bio.francy.dev",
           },
         ],
-        destination: "/app/bio",
-        permanent: true,
+        destination: "/app/bio/:path*",
       },
     ];
   },
