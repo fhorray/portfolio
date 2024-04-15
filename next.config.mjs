@@ -1,16 +1,15 @@
 module.exports = {
-  async redirects() {
+  async rewrites() {
     return [
       {
-        source: "/",
+        source: "/:path*",
         has: [
           {
             type: "host",
             value: "bio.francy.dev",
           },
         ],
-        destination: "/app/bio",
-        permanent: true,
+        destination: "/app/:path*",
       },
     ];
   },
