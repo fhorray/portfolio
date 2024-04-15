@@ -10,6 +10,7 @@ module.exports = {
           },
         ],
         destination: "/app/bio/:path*",
+        permanent: true,
       },
     ];
   },
